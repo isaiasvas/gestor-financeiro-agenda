@@ -32,8 +32,6 @@ Route::get('financeiro/{financeiro}/replica', [\App\Http\Controllers\ContasContr
 Route::get('financeiro/saldoanterior', [\App\Http\Controllers\ContasController::class, 'month'])->name('financeiro.month');
 Route::resource('financeiro', App\Http\Controllers\ContasController::class)->except('show');
 
-Route::resource('relatorio', App\Http\Controllers\RelatorioController::class)->except('show');
-
 Route::resource('funcionario', App\Http\Controllers\FuncionariosController::class)->except('show');
 Route::get('categoria', [App\Http\Controllers\CategoriaController::class, 'index'])->name('categoria.index');
 Route::post('categoria', [App\Http\Controllers\CategoriaController::class, 'store'])->name('categoria.store');
@@ -63,5 +61,4 @@ Route::put('clienteoufornecedor/update', [App\Http\Controllers\ClienteOuForneced
 Route::get('relatorio', [App\Http\Controllers\RelatorioController::class, 'index'])->name('relatorio.index');
 Route::post('relatorio', [App\Http\Controllers\RelatorioController::class, 'store'])->name('relatorio.store');
 Route::delete('relatorio', [App\Http\Controllers\RelatorioController::class, 'destroy'])->name('relatorio.delete');
-Route::put('relatorio/update', [App\Http\Controllers\RelatorioController::class, 'update'])->name('relatorio.update');
-
+Route::put('relatorio/update', [App\Http\Controllers\RelatorioController::class, 'update'])->name('relatorio.update'); // Mantenha essa linha se for única
