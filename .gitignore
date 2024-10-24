@@ -21,3 +21,33 @@ Homestead.yaml
 Homestead.json
 /.vagrant
 .phpunit.result.cache
+
+/public/mix-manifest.json
+/public/js/*.js
+/public/css/*.css
+/public/*.ico
+/public/*.png
+/public/*.jpg
+/public/*.jpeg
+/public/*.gif
+/public/*.svg
+/public/*.map
+
+# Diretórios de cache e logs
+/storage/app/public
+/storage/framework/cache/data
+/storage/logs/*.log
+/storage/framework/sessions/*
+/storage/framework/views/*.php
+
+# Configurações de ambiente
+.env.backup
+.env.local
+.env.*.php
+.env.testing
+
+# IDE e Sistema operacional
+.idea
+.vscode
+.DS_Store
+Thumbs.db
