@@ -40,7 +40,11 @@ cd gestor-financeiro-agenda
 composer install
 ```
 
-### 3. Configurando o arquivo `.env`
+### 3. Crie a pasta sessions
+
+mkdir storage/framework/sessions/
+
+### 4. Configurando o arquivo `.env`
 
 Renomeie o arquivo `.env.example` para `.env`:
 
@@ -59,7 +63,7 @@ DB_USERNAME=seu_usuario
 DB_PASSWORD=sua_senha
 ```
 
-### 4. Gerando a chave da aplicação
+### 5. Gerando a chave da aplicação
 
 Execute o comando abaixo para gerar a chave única da aplicação Laravel:
 
@@ -67,15 +71,15 @@ Execute o comando abaixo para gerar a chave única da aplicação Laravel:
 php artisan key:generate
 ```
 
-### 5. Executando as migrations
+### 6. Executando as migrations
 
 Agora, execute as migrations para criar as tabelas no banco de dados:
 
 ```bash
-php artisan migrate --seed
+php artisan migrate:fresh --seed
 ```
 
-### 6. Servindo a aplicação
+### 7. Servindo a aplicação
 
 Por fim, rode o servidor local do Laravel:
 
