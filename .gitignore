@@ -22,16 +22,6 @@ Homestead.json
 /.vagrant
 .phpunit.result.cache
 
-/public/mix-manifest.json
-/public/js/*.js
-/public/css/*.css
-/public/*.ico
-/public/*.png
-/public/*.jpg
-/public/*.jpeg
-/public/*.gif
-/public/*.svg
-/public/*.map
 
 # Diretórios de cache e logs
 /storage/app/public
