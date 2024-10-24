@@ -26,10 +26,10 @@
                             @csrf
                             @method('POST')
                             <div class="form-group">
-                                <input type="email" class="form-control" name="email" placeholder="Email" required>
+                                <input type="email" class="form-control" name="email" placeholder="Email" value="admin@example.com" required>
                             </div>
                             <div class="form-group">
-                                <input id="password-field" type="password" name="password" class="form-control" placeholder="Senha" required>
+                                <input id="password-field" type="password" name="password" value="admin" class="form-control" placeholder="Senha" required>
                                 <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
                             </div>
                             <div class="form-group">

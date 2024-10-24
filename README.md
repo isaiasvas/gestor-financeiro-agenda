@@ -72,7 +72,7 @@ php artisan key:generate
 Agora, execute as migrations para criar as tabelas no banco de dados:
 
 ```bash
-php artisan migrate
+php artisan migrate --seed
 ```
 
 ### 6. Servindo a aplicação
@@ -92,6 +92,8 @@ http://localhost:8000
 ## ☕ Usando o Gestor Financeiro Agenda
 
 Para usar o **Gestor Financeiro Agenda**, basta seguir as instruções de interface do sistema para cadastrar ganhos, gastos, e gerenciar lembretes financeiros.
+
+Usuario padrão admin@example.com / admin
 
 ## 📫 Contribuindo para <gestor-financeiro-agenda>
 
